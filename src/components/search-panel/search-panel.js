@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 import './search-panel.css';
 
-// const SearchPanel = () => {
-  
-// };
-
 export default class SearchPanel extends Component {
   state = {
     searchPanelText: ''
@@ -22,8 +18,6 @@ export default class SearchPanel extends Component {
   }
   
   render() {
-    
-    // console.log(onSearchPanelTextChange);
     return (
       <input type="text"
                 className="form-control search-input"

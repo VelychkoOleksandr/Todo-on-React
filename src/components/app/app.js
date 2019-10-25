@@ -17,11 +17,6 @@ export default class App extends Component {
       this.createTodoItem('Make Awesome App'),
       this.createTodoItem('Have a lunch')
     ],
-    // copyOfTodoData: [
-    //   this.createTodoItem('Drink Coffee'),
-    //   this.createTodoItem('Make Awesome App'),
-    //   this.createTodoItem('Have a lunch')
-    // ], 
     term: '', 
     status: 'all'
   }
@@ -60,7 +55,7 @@ export default class App extends Component {
 
   toggleProperty(arr, id, propName) {
     const indx = arr.findIndex( (el) => el.id === id );
-      //===UPDATE TODODATA===\\
+     
       const oldItem = arr[indx]; 
       const newItem = { ...oldItem, 
                         [propName]: !oldItem[propName] };
