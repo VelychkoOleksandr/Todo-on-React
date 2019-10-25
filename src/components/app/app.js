@@ -47,6 +47,7 @@ export default class App extends Component {
   }
 
   addItem = (label) => {
+    if (!label) return;
     this.setState( ({ todoData }) => {
       const newTodoItem = this.createTodoItem(label);
       const modifiedTodoData = [...todoData, newTodoItem];
